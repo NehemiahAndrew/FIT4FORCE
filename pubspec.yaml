@@ -1,0 +1,112 @@
+name: fit_4_force
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Supabase - Complete Backend Solution
+  supabase_flutter: ^2.5.6
+  supabase: ^2.2.4
+  gotrue: ^2.8.4
+  realtime_client: ^2.0.2
+  postgrest: ^2.1.1
+  storage_client: ^2.0.1
+
+  # For notifications (replacing Firebase Messaging)
+  flutter_local_notifications: ^17.0.0
+
+  # State Management
+  flutter_bloc: ^8.1.4
+  equatable: ^2.0.5
+
+  # UI Components
+  google_fonts: ^4.0.4
+  flutter_svg: ^1.1.6
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  lottie: ^2.6.0
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Network & API
+  dio: ^5.4.1
+  http: ^0.13.6
+  connectivity_plus: ^6.0.5
+  html: ^0.15.4
+  xml: ^6.5.0
+
+  # Utils
+  intl: ^0.17.0
+  url_launcher: ^6.2.5
+  package_info_plus: ^8.3.0
+  device_info_plus: ^9.1.2
+  uuid: ^4.5.1
+  get_it: ^7.6.7
+  logger: ^2.0.2+1
+  path: ^1.8.3
+  share_plus: ^7.2.2
+
+  # Payment Processing - HTTP-based Paystack integration for better compatibility
+  # flutter_paystack: ^1.0.5+1  # Disabled due to Flutter compatibility issues
+  crypto: ^3.0.3  # For generating secure references
+
+  # Ads removed
+
+  # AI & ML
+  tflite_flutter: ^0.10.4
+  camera: ^0.10.5+9
+
+  # Charts & Analytics
+  fl_chart: ^0.66.2
+
+  # Social Features
+  image_picker: ^1.0.7
+  file_picker: ^8.0.0+1
+  image: ^4.1.7
+  mime: ^1.0.4
+
+  # Video Player
+  video_player: ^2.8.2
+  chewie: ^1.7.4
+  path_provider: ^2.1.2
+  vimeo_player_flutter: ^0.1.0
+
+  # Notifications
+  # flutter_local_notifications is already included above
+
+  # Device Management dependencies already included above
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+# Fix for webview_flutter_android transitive dependency issues
+dependency_overrides:
+  webview_flutter: 4.4.4
+  webview_flutter_android: 3.16.7
+  webview_flutter_wkwebview: 3.9.4
+  webview_flutter_platform_interface: 2.10.0

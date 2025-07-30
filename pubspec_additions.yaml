@@ -1,0 +1,2 @@
+# Add the vimeo_player package for proper Vimeo integration
+vimeo_player: ^0.2.8
