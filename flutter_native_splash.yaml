@@ -1,0 +1,24 @@
+flutter_native_splash:
+  # This file configures the flutter_native_splash package
+  
+  # Background color
+  color: "#0F1419"
+  
+  # Your custom Fit4Force shield logo
+  image: assets/images/logo.jpeg
+  
+  # Android configuration
+  android: true
+  android_gravity: center
+  android_12:
+    # Use Android 36 instead of Android 31
+    sdk_int: 36
+    image: assets/images/logo.jpeg
+    color: "#0F1419"
+    icon_background_color: "#0F1419"
+  
+  # iOS configuration
+  ios: true
+  
+  # Web configuration
+  web: false
